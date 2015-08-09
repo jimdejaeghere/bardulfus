@@ -1,0 +1,14 @@
+<div class="col-md-3 col-sm-4 col-xs-6" ng-repeat="x in products">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<img ng-src="{{ x.ProductLocation }}" alt=" " class="product img-responsive " />
+			</div>
+			<div class="panel-footer ">
+				<span class="productdescription ">{{ x.ProductName }}</span>
+				<br />
+				<span class="price ">{{ x.ProductPrice }}€</span>
+				<span class="reference ">ref {{ x.ProductID }}</span>
+			</div>
+		</div>
+	</div>
+</div>

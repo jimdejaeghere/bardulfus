@@ -1,0 +1,16 @@
+<div ng-controller="bannerCtrl">
+    <h1>Banners</h1>
+    <table>
+        <tr ng-repeat="banner in banners">
+            <td>
+                <img ng-src="{{ banner.BannerLocation }}" alt=" " class=" product img-responsive " />
+            </td>
+            <td>
+                <input type="checkbox" ng-model="banner.BannerActive" ng-true-value="1" ng-false-value="0" value="BannerActive" ng-change="change($index)">
+            </td>
+            <td>
+                <button type="button" class="btn btn-default">Wissen</button>
+            </td>
+        </tr>
+    </table>
+</div>

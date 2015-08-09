@@ -1,0 +1,11 @@
+
+<h1>Categories</h1>
+
+<div ng-repeat="categorie in categories">
+	<label style="height: 36px;">Categorie: </label> {{categorie.CategorieName}}  &nbsp;<span class="badge" ng-show="categorie.Counted != 0"> {{categorie.Counted}}</span>
+		<button type="button" class="btn btn-default" ng-click="delete($index)" ng-show="categorie.Counted == 0">Wissen</button>
+</div>
+<form>
+	<input type="text" ng-model="$parent.newCategorie"></input>
+		<button class="btn btn-default" ng-click="insert()">Toevoegen</button>
+</form>
